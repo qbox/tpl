@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"text/template"
 
-	"qiniupkg.com/text/tpl.v1/generator"
+	"qiniu.com/tpl/generator"
 )
 
 func exitIfNotNil(err error) {

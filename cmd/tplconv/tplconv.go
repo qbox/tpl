@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"qiniupkg.com/text/tpl.v1/extractor"
+	"qiniu.com/tpl/extractor"
 )
 
 const help = `

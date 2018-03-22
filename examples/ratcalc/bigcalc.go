@@ -6,12 +6,12 @@ import (
 	"os"
 	"strings"
 
-	"qiniupkg.com/text/tpl.v1/cmplx"
-	"qiniupkg.com/text/tpl.v1/interpreter"
+	"qiniu.com/tpl/interpreter"
+	"qiniu.com/tpl/rat"
 )
 
 var (
-	calc   = cmplx.New()
+	calc   = rat.New()
 	engine *interpreter.Engine
 )
 
@@ -34,8 +34,8 @@ func eval(line string) {
 	}
 
 	v, _ := calc.Ret()
-	if imag(v) == 0 {
-		fmt.Printf("> %v\n\n", real(v))
+	if v.IsInt() {
+		fmt.Printf("> %v\n\n", v.Num())
 	} else {
 		fmt.Printf("> %v\n\n", v)
 	}

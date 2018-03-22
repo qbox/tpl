@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"qiniupkg.com/text/tpl.v1"
+	"qiniu.com/tpl"
 )
 
 /* -----------------------------------------------------------------------------
