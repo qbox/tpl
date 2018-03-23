@@ -1,5 +1,6 @@
 tpl
 ===
+[![Build Status](https://travis-ci.com/qbox/tpl.svg?token=8Frioiaq36bhxZs3jYgn&branch=master)](https://travis-ci.com/qbox/tpl)
 
 TPL 全称是 `Text Processing Language`（文本处理语言）。整个库的组成如下：
 
