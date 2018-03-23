@@ -1,0 +1,8 @@
+language: go
+go:
+  - "1.10"
+sudo: false
+go_import_path: qiniu.com/tpl
+script:
+  - make
+  - make test
